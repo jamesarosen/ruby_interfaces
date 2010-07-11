@@ -1,8 +1,9 @@
-auto: true
-server: true
+auto: auto
+server: false
 permalink: /:title
 pygments: true
 exclude:
 - README.md
 - Rakefile
 - config.ru
+root_url: /ruby_interfaces
