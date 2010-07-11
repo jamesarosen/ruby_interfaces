@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article>
+  <hgroup>
+    <h1><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+    <h2>{{ page.interface.purpose }}</h2>
+  </hgroup>
+  <blockquote class='description'>
+    {{ page.interface.description }}
+  </block>
+  <ul class='implementations'>
+    {% for implementation in page.interface.implementations %}<li>{{ implementation }}</a></li>{% endfor %}
+  </ul>
+</article>
