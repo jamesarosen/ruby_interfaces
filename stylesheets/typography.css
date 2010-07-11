@@ -1,0 +1,31 @@
+@import url('http://fonts.googleapis.com/css?family=Inconsolata|Molengo|OFL+Sorts+Mill+Goudy+TT');
+
+body {
+  font-family: 'Molengo', 'Gill Sans', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, hgroup, legend {
+  font-family: 'OFL Sorts Mill Goudy TT', 'Bookman', serif;
+}
+
+code, pre {
+  font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+}
+
+/* maintain 16/24 vertical spacing */
+
+body        { font-size: 100%; line-height: 1.5em; }
+html > body { font-size: 16px; line-height: 24px; }
+
+header h1 { font-size: 2em; line-height: 1.5em; }
+
+h2,
+legend,
+lh        { font-size: 1.5em; margin-top: 0.8em; margin-bottom: 0.2em; }
+
+h3,
+h4        { margin-top: 1.2em; margin-bottom: 0.3em; }
+
+small,
+aside,
+details   { font-size: 0.75em; line-height: 2em; }
