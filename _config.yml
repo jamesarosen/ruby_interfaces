@@ -1,7 +1,8 @@
 auto: true
 server: true
-permalink: /blog/:year/:month/:day/:title
+permalink: /:title
 pygments: true
 exclude:
 - README.md
 - Rakefile
+- config.ru
