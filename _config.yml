@@ -1,0 +1,7 @@
+auto: true
+server: true
+permalink: /blog/:year/:month/:day/:title
+pygments: true
+exclude:
+- README.md
+- Rakefile
