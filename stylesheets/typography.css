@@ -12,6 +12,16 @@ code, pre {
   font-family: 'Inconsolata', 'Courier New', Courier, monospace;
 }
 
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+  blockquote:before, blockquote:after {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  blockquote:before { content: "\201C"; margin-left: -0.65em; }
+  blockquote:after { content: "\201D"; }
+
 /* maintain 16/24 vertical spacing */
 
 body        { font-size: 100%; line-height: 1.5em; }
