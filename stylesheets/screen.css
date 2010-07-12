@@ -5,9 +5,18 @@ header, #content, footer {
 }
 
 header {
+  background-color: #870804;
   border-bottom: 2px solid #777;
   margin-bottom: 1.375em;
+  padding-top: 0.75em;
 }
+
+  header, header h1, header h1 a, header h1 a:visited { color: #ccc; }
+
+h1, h2, h1 a, h1 a:visited, h2 a, h2 a:visited { color: #870804; }
+
+a { color: #870804; text-decoration: none; }
+a:hover, a:active, a:focus { text-decoration: underline; }
 
 article hgroup h1, article hgroup h2 { display: inline; }
 article hgroup h1 + h2:before { content: ':: '; }
@@ -34,9 +43,18 @@ blockquote {
   background: url('/images/octocat.png') no-repeat center left;
 }
 
+pre {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  overflow: auto;
+  padding: 0.719em;
+}
+
 footer {
   border-top: 2px solid #777;
-  margin-top: 1.375em;
+  margin-top: 1.15em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   text-align: center;
 }
 
