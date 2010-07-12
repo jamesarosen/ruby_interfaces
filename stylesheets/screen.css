@@ -9,6 +9,31 @@ header {
   margin-bottom: 1.375em;
 }
 
+article hgroup h1, article hgroup h2 { display: inline; }
+article hgroup h1 + h2:before { content: ':: '; }
+
+blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.implementations li {
+  margin-left: 2em;
+  margin-right: 2em;
+  list-style: disc outside url('/images/silk/bullet_red.png');
+  list-style-type: ;
+}
+
+.bug {
+  padding-left: 20px;
+  background: url('/images/silk/bug.png') no-repeat center left;
+}
+
+.github {
+  padding-left: 24px;
+  background: url('/images/octocat.png') no-repeat center left;
+}
+
 footer {
   border-top: 2px solid #777;
   margin-top: 1.375em;
