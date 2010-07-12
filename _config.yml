@@ -6,4 +6,3 @@ exclude:
 - README.md
 - Rakefile
 - config.ru
-root_url: /ruby_interfaces
