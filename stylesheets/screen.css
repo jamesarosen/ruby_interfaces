@@ -1,4 +1,63 @@
-footer {
-  text-align: center;
-  width: 100%;
+/* All Browsers */
+header, #content, footer {
+  padding-left: 2em;
+  padding-right: 2em;
 }
+
+header {
+  border-bottom: 2px solid #777;
+  margin-bottom: 1.375em;
+}
+
+footer {
+  border-top: 2px solid #777;
+  margin-top: 1.375em;
+  text-align: center;
+}
+
+  footer span + span:before { content: '| '; }
+
+
+/* iPhone */
+@media screen and (max-device-width: 480px){
+
+  header, #content, footer {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  header > h1 {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+  }
+
+  #content > *, footer > * {
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+  }
+
+  #content > h2, #content > lh {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+  }
+
+  footer span { display: block; }
+  footer span + span { border-top: 1px solid #aaa; margin-top: -1px; }
+  footer span + span:before { content: ''; }
+
+} /* end iPhone */
+
+
+
+/* iPad Portrait */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+
+} /* end iPad Portrait */
+
+
+
+/* iPad Landscape */
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+} /* end iPad Landscape */

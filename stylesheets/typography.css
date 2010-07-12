@@ -17,7 +17,7 @@ code, pre {
 body        { font-size: 100%; line-height: 1.5em; }
 html > body { font-size: 16px; line-height: 24px; }
 
-header h1 { font-size: 2em; line-height: 1.5em; }
+header h1 { font-size: 2em; line-height: 1.5em; font-weight: bold; }
 
 h2,
 legend,
