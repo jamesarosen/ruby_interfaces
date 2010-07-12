@@ -43,6 +43,15 @@ blockquote {
   background: url('/images/octocat.png') no-repeat center left;
 }
 
+ol li {
+  list-style-type: decimal;
+  margin-left: 2em;
+}
+
+#content ol + p {
+  margin-top: 1.5em;
+}
+
 pre {
   background-color: #eee;
   border: 1px solid #aaa;
