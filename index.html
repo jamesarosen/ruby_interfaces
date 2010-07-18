@@ -21,6 +21,9 @@ title: Depend Fearlessly
       {% if post.interface.gem %}
       <img src='/images/silk/ruby.png' title='Available as a Ruby Gem' />
       {% endif %}
+      {% if post.interface.home %}
+      <a href="{{ post.interface.home }}" title="{{ post.title }} Home Page"><img src='/images/silk/house.png' title='House' /></a>
+      {% endif %}
       <blockquote class='description'>
         {{ post.interface.description }}
       </blockquote>
