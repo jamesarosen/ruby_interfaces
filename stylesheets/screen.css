@@ -53,6 +53,15 @@ ol li {
   margin-top: 1.5em;
 }
 
+#content ul li {
+  list-style-type: disc;
+  margin-top: 1.5em;
+}
+
+#content .implementations li {
+  margin-top: 0;
+}
+
 pre {
   background-color: #eee;
   border: 1px solid #aaa;
