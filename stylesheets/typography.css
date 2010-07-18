@@ -41,3 +41,6 @@ aside,
 details   { font-size: 0.75em; line-height: 2em; }
 
 footer    { font-size: 1.2em; line-height: 1.25em; }
+
+em        { font-style: italic; }
+strong    { font-weight: bold; }
