@@ -3,11 +3,28 @@ layout: default
 title: Depend Fearlessly
 ---
 
-<h2>Recent Posts</h2>
-<nav>
+<div id='articles'>
+  <h2>Best Practices</h2>
   <ul>
-    {% for post in site.posts %}
+    {% for post in site.categories.best_practices %}
     <li><a href="{{ post.url }}">{{ post.title }}</a> <abbr title="{{post.date}}">{{ post.date | date_to_string }}</abbr></li>
     {% endfor %}
   </ul>
-</nav>
+</div>
+
+<div id='interfaces'>
+  <h2>Intefaces</h2>
+  <ul>
+    {% for post in site.categories.interface %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.interface.purpose }}
+      {% if post.interface.gem %}
+      <img src='/images/silk/ruby.png' title='Available as a Ruby Gem' />
+      {% endif %}
+      <blockquote class='description'>
+        {{ post.interface.description }}
+      </blockquote>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

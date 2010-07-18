@@ -5,6 +5,9 @@ layout: default
   <hgroup>
     <h1><a href="{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
     <h2>{{ page.interface.purpose }}</h2>
+    {% if page.interface.gem %}
+    <img src='/images/silk/ruby.png' title='Available as a Ruby Gem' />
+    {% endif %}
   </hgroup>
   <blockquote class='description'>
     {{ page.interface.description }}

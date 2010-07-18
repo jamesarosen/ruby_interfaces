@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: Consider Using Proxies for Adapters
-categories: best-practices
+categories:
+  - best_practices
 ---
 
 Having implementation adapters that are proxies that properly define `#method_missing` and `#respond_to?` allows clients to take advantage of non-standard functionality when using interface classes. For example

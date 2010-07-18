@@ -1,8 +1,9 @@
 /* All Browsers */
 header, #content, footer {
+  clear: both;
+  display: block;
   padding-left: 2em;
   padding-right: 2em;
-  display: block;
 }
 
 header {
@@ -12,7 +13,17 @@ header {
   padding-top: 0.75em;
 }
 
-  header, header h1, header h1 a, header h1 a:visited { color: #ccc; }
+footer {
+  border-top: 2px solid #777;
+  margin-top: 1.15em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+  footer span + span:before { content: '| '; }
+
+header, header h1, header h1 a, header h1 a:visited { color: #ccc; }
 
 h1, h2, h1 a, h1 a:visited, h2 a, h2 a:visited { color: #870804; }
 
@@ -49,6 +60,26 @@ ol li {
   margin-left: 2em;
 }
 
+#interfaces {
+  padding-right: 50%;
+}
+
+  #interfaces li {
+    border: 2px solid #777;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 0.7em;
+  }
+
+#articles {
+  float: right;
+  padding-bottom: 1.5em;
+  width: 45%;
+}
+
+  #articles > h2 { margin: 0; }
+
 #content ol + p {
   margin-top: 1.5em;
 }
@@ -57,6 +88,10 @@ ol li {
   list-style-type: disc;
   margin-top: 1.5em;
 }
+
+  #content #interfaces li, #content #articles li {
+    list-style-type: none;
+  }
 
 #content .implementations li {
   margin-top: 0;
@@ -68,16 +103,6 @@ pre {
   overflow: auto;
   padding: 0.719em;
 }
-
-footer {
-  border-top: 2px solid #777;
-  margin-top: 1.15em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-align: center;
-}
-
-  footer span + span:before { content: '| '; }
 
 
 /* iPhone */

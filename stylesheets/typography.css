@@ -16,10 +16,9 @@ blockquote {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
   blockquote:before, blockquote:after {
-    font-size: 1.5em;
     font-weight: bold;
   }
-  blockquote:before { content: "\201C"; margin-left: -0.65em; }
+  blockquote:before { content: "\201C"; margin-left: -0.9em; }
   blockquote:after { content: "\201D"; }
 
 /* maintain 16/24 vertical spacing */

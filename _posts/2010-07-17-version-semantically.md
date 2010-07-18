@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: Version Semantically
-categories: best-practices
+categories:
+  - best_practices
 ---
 
 The relationship between interface and implementation is a game of cat-and-mouse. Implementers naturally strive for feature-completeness and interface maintainers for stability. [Semantic Versioning](http://semver.org/) can help tremendously here.  Some **strong** recommendations:

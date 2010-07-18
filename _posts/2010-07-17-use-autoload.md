@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: Use Autoload
-categories: best-practices
+categories:
+  - best_practices
 ---
 
 Separating implementation adapters into individual files and using `autoload` will reduce load time and memory usage for clients without forcing them to manually `require 'interface/implementation'`. For example

@@ -1,7 +1,8 @@
 ---
 layout: blog
 title: Consider Exceptions
-categories: best-practices
+categories:
+  - best_practices
 ---
 
 If implementations use custom exceptions (e.g. [`TwitterError`](http://github.com/jnunemaker/twitter/tree/HEAD/lib/twitter.rb)), consider offering an interface version so clients have an easier time writing `rescue` phrases.
