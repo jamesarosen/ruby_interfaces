@@ -26,7 +26,7 @@ Declare one or more exception modules in your interface and then mix them into t
     end
     
     # in a client:
-    MyInteface.use 'some_implementation'
+    MyInterface.use 'some_implementation'
     begin
       value = MyInterface.parse('foo')
     rescue MyInterface::ParseException
@@ -38,7 +38,7 @@ Declare one or more exception modules in your interface and then mix them into t
 Declare one or more "constant" `Array`s containing known exception classes. Populate the `Array`(s) with classes whose implementations are loaded. For example:
 
     # in your interface library:
-    module MyInteface
+    module MyInterface
       PARSE_EXCEPTION_CLASSES = []
       
       class SomeImplementationAdapter
@@ -52,9 +52,9 @@ Declare one or more "constant" `Array`s containing known exception classes. Popu
     end
     
     # in a client:
-    MyInteface.use 'some_implementation'
+    MyInterface.use 'some_implementation'
     begin
-      value = MyInteface.parse('foo')
+      value = MyInterface.parse('foo')
     rescue *MyInterface::PARSE_EXCEPTION_CLASSES
       ...
     end

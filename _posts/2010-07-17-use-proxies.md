@@ -8,7 +8,7 @@ categories:
 Having implementation adapters that are proxies that properly define `#method_missing` and `#respond_to?` allows clients to take advantage of non-standard functionality when using interface classes. For example
 
     # in your interface library:
-    module MyInteface
+    module MyInterface
       module Adapters
         class FooAdapter
           def initialize(name)
